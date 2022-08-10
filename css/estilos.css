@@ -4,10 +4,17 @@ padding: 0;
 box-sizing: border-box;
 }
 
+body{
+    margin: 10px;
+    padding: 15px;
+}
+
 header{
     color: #fff;
     text-shadow: 2px 1px 10px black;
 }
+
+
 
 .menu{
     cursor: pointer;
@@ -57,6 +64,26 @@ main{
 .portada p{
     margin-bottom: 20px;
 }
+
+.transition{
+    height: 12;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 4px solid;
+   
+}
+
+#t1{
+    transition: height 2.7s;
+
+}
+
+#t1:hover{
+    height: 250px;
+    
+}
+
 ul{
     list-style: none;
     background-color: #d0d2d3;
@@ -94,11 +121,13 @@ h1{
     color:#44c7f4
 }
 .boxmodel{
-    width: 600px;
+    width: 100%;
     height: 300px;
     border: 10px solid black;
     background-color: #d0d2d3;
-    margin: 0 auto;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
 }
 
 .nleft{
@@ -123,10 +152,7 @@ h2{
 .animaciones{
     height: 50px;
     width: 50px;
-    background-color: orange;
-    background-image: linear-gradient(red, orange);
-    background-image: linear-gradient(to left, red, orange);
-
+   
 }
 
 .galeria{
@@ -191,6 +217,8 @@ h2{
 footer{
     background-color: #00586b;
     width: 100%;
+    margin: 5px;
+    padding: 10px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
