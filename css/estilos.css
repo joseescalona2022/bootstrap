@@ -37,6 +37,9 @@ header {
   background-size: cover;
   height: 350px;
 }
+.jumbotron p {
+  background-color: #44c7f4;
+}
 
 .btn-success {
   background-color: #00586b;
