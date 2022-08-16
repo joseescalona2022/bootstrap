@@ -16,17 +16,10 @@ body {
   min-height: 100vh;
   text-align: center;
 }
-body header {
+
+header {
   color: #fff;
   text-shadow: 2px 1px 10px black;
-}
-body header h3 {
-  font-size: large;
-  background-color: #44c7f4;
-  padding: 15px;
-}
-body header h3 P {
-  color: #f50537;
 }
 
 .menu {

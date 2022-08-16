@@ -14,20 +14,12 @@
         flex-direction: column;
         min-height: 100vh;
         text-align: center;
-        header{
-            color: #fff;
-            text-shadow: 2px 1px 10px black;
-            h3{
-                font-size: large;
-                background-color: #44c7f4;
-                padding: 15px;
-                P{
-                    color: #f50537;
-                }
-            }
-        }
     }
-    
+
+    header{
+        color: #fff;
+        text-shadow: 2px 1px 10px black;
+    }
 
     .menu{
         cursor: pointer;
