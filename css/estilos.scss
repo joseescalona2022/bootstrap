@@ -31,6 +31,15 @@
         }
     }
 
+    @mixin sizes($width, $height, $bcolor) {
+        height: $height;
+        width: $width;
+        background-color: $bcolor;
+    }
+    .realmixin{
+        @include sizes(100%, 400px , red )
+    }
+
 
     
     body{
