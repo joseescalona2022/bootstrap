@@ -6,6 +6,32 @@
     html{
         height: 100%;
     }
+
+    $img1: barcelona;
+    $img2: inter;
+    $img3: liverpool;
+    $img4: newcastle;
+    $equipo: $img1 ;
+
+
+    .equipos{
+        height: 100%;
+        width: 100%;
+        margin: 10px;
+
+    }
+
+    .equipos{
+        @if $equipo==$img1 {
+            color: #214de8;
+            background-image: url(../img/barcelona.jpg);
+            background-position: center;
+            background-size: cover;
+            
+        }
+    }
+
+
     
     body{
         margin: 10px;
@@ -158,6 +184,12 @@
         padding: 10px;
     
     }
+
+    .equipos{
+        height: 400px;
+        width: 700px;
+    }
+
     
     .animaciones{
         height: 50px;
