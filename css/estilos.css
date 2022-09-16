@@ -17,12 +17,6 @@ html {
   background-size: contain;
 }
 
-.realmixin {
-  height: 400px;
-  width: 100%;
-  background-color: red;
-}
-
 body {
   margin: 10px;
   padding: 10px;
@@ -90,6 +84,7 @@ main {
 
 .portada p {
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .transition {
@@ -194,6 +189,8 @@ h2 {
   grid-template-rows: repeat(4, 200px);
   padding: 100px;
   grid-gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .item {
@@ -227,7 +224,7 @@ h2 {
 }
 
 .item5 {
-  background-image: url(../img/rm9.jpeg);
+  background-image: url(../img/rm9.jpg);
   background-position: center;
   background-size: 100% 100%;
 }
@@ -271,14 +268,57 @@ footer i {
   margin-top: 20px;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 380px) {
   .galeria {
-    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    grid-template-rows: repeat(8);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item1 {
+    margin-top: 20px;
+  }
+  .item5 {
+    padding: 100px;
+  }
+  .item6 {
+    padding: 100px;
+  }
+  .item7 {
+    padding: 100px;
+  }
+  .item8 {
+    padding: 100px;
+    margin-bottom: 40px;
+  }
+  footer {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 50px;
+    background-color: #44c7f4;
+    letter-spacing: 5px;
+    padding: 5px;
+    position: relative;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .portada p {
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 530px) {
+  h1 {
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 800px) {
   .galeria {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
   }
   .item1 {
     grid-column: 1/2;
