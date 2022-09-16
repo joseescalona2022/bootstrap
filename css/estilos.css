@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -87,44 +88,6 @@ main {
   margin-top: 10px;
 }
 
-.transition {
-  height: 12;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  border: 4px solid;
-}
-
-#t1 {
-  transition: height 2.7s;
-}
-
-#t1:hover {
-  height: 250px;
-}
-
-ul {
-  list-style: none;
-  background-color: #d0d2d3;
-  border: 20px;
-  font-size: 30px;
-}
-
-li {
-  display: inline-block;
-  width: 15%;
-  position: relative;
-  font-size: 30px;
-}
-
-li a {
-  text-decoration: none;
-}
-
-li a:hover {
-  color: #f50537;
-}
-
 .futbol {
   height: 400px;
   width: 1000px;
@@ -145,12 +108,13 @@ h1 {
 
 .boxmodel {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border: 5px solid black;
   background-color: #d0d2d3;
   margin: 5px;
   padding: 5px;
   position: relative;
+  text-align: justify;
 }
 
 .nleft {
@@ -168,11 +132,6 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
   padding: 10px;
-}
-
-.equipos {
-  height: 400px;
-  width: 700px;
 }
 
 .animaciones {
@@ -247,6 +206,7 @@ h2 {
   background-size: 100% 100%;
 }
 
+/* Inicio de estilos generales del footer*/
 footer {
   background-color: #00586b;
   width: 100%;
@@ -268,6 +228,7 @@ footer i {
   margin-top: 20px;
 }
 
+/* Fin de estilos generales del footer*/
 @media only screen and (max-width: 380px) {
   .galeria {
     padding: 0;
@@ -292,6 +253,17 @@ footer i {
     padding: 100px;
     margin-bottom: 40px;
   }
+  /* Inicio de estilos para la página de EMPRESAS*/
+  .jumbotron {
+    height: 200px;
+  }
+  .boxmodel {
+    height: 750px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  /*Fin de estilos para la página de EMPRESAS*/
+  /*Inicio de estilos para Footer*/
   footer {
     font-size: 16px;
     margin-top: 30px;
@@ -301,21 +273,79 @@ footer i {
     padding: 5px;
     position: relative;
   }
+  /*Fin de estilos para Footer*/
+  /*Inicio de estilos para orden jerarquico*/
   h1 {
     font-size: 20px;
   }
   h2 {
     font-size: 20px;
   }
+  h3 {
+    font-size: 20px;
+  }
   .portada p {
     color: #fff;
   }
 }
-@media only screen and (max-width: 530px) {
+/*Fin de estilos para orden jerarquico*/
+/*Inicio estilos pagina de PRODUCTOS*/
+.futbol {
+  width: 100%;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+/*Fin de estilos de página de PRODUCTOS*/
+/*Inicio de estilos de página de HISTORIA*/
+.table {
+  height: 400px;
+}
+
+@media only screen and (min-width: 381px) {
   h1 {
     font-size: 25px;
   }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .portada p {
+    color: #d0d2d3;
+  }
+  .galeria {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    grid-template-rows: repeat(8);
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
+.item1 {
+  margin-top: 15px;
+}
+
+.item5 {
+  padding: 100px;
+}
+
+.item6 {
+  padding: 100px;
+}
+
+.item7 {
+  padding: 100px;
+}
+
+.item8 {
+  padding: 100px;
+  margin-bottom: 40px;
+}
+
 @media only screen and (min-width: 800px) {
   .galeria {
     grid-template-columns: repeat(2, 2fr);
