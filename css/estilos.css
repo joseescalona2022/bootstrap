@@ -41,6 +41,8 @@ header {
 
 .navbar {
   background-color: #00586b;
+  width: 100%;
+  font-size: 20px;
 }
 
 .jumbotron {
@@ -132,11 +134,6 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
   padding: 10px;
-}
-
-.animaciones {
-  height: 50px;
-  width: 50px;
 }
 
 .galeria {
@@ -265,13 +262,22 @@ footer i {
   /*Fin de estilos para la página de EMPRESAS*/
   /*Inicio de estilos para Footer*/
   footer {
-    font-size: 16px;
-    margin-top: 30px;
-    padding: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 95%;
+    overflow: hidden;
+    padding: 100px;
     background-color: #44c7f4;
     letter-spacing: 5px;
     padding: 5px;
-    position: relative;
+    position: absolute;
+  }
+  footer i {
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 10px;
+    padding: 0;
+    margin-top: 20px;
   }
   /*Fin de estilos para Footer*/
   /*Inicio de estilos para orden jerarquico*/
@@ -316,6 +322,7 @@ footer i {
   }
   .portada p {
     color: #d0d2d3;
+    font-size: 20px;
   }
   .galeria {
     padding: 0;
@@ -324,28 +331,75 @@ footer i {
     grid-template-rows: repeat(8);
     grid-template-columns: repeat(1, 1fr);
   }
+  .item1 {
+    margin-top: 15px;
+  }
+  .item5 {
+    padding: 100px;
+  }
+  .item6 {
+    padding: 100px;
+  }
+  .item7 {
+    padding: 100px;
+  }
+  .item8 {
+    padding: 100px;
+    margin-bottom: 40px;
+  }
+  /*Inicia estilos del footer*/
+  footer {
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 0;
+    width: 97%;
+    background-color: #44c7f4;
+    letter-spacing: 4px;
+    position: absolute;
+  }
+  footer i {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 8px;
+    padding: 0;
+    margin-top: 20px;
+  }
+  /*Finaliza estilos del footer*/
+  /*Inicia estilos página de EMPRESAS*/
+  .boxmodel {
+    height: 660px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .nleft {
+    background-image: url(../img/rm15.jpg);
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  /*Finaliza estilos página de EMPRESAS*/
+  .jumbotron {
+    height: 200px;
+  }
+  .futbol {
+    height: 150px;
+    width: 100%;
+    background-position: center;
+    padding: 200px;
+    background-size: cover;
+  }
 }
-.item1 {
-  margin-top: 15px;
+@media only screen and (min-width: 500px) {
+  .boxmodel {
+    height: 600px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
 }
-
-.item5 {
-  padding: 100px;
-}
-
-.item6 {
-  padding: 100px;
-}
-
-.item7 {
-  padding: 100px;
-}
-
-.item8 {
-  padding: 100px;
-  margin-bottom: 40px;
-}
-
 @media only screen and (min-width: 800px) {
   .galeria {
     grid-template-columns: repeat(2, 2fr);
@@ -381,6 +435,12 @@ footer i {
   .item8 {
     grid-column: 2/3;
     grid-row: 4/5;
+  }
+  .boxmodel {
+    height: 300px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
   }
 }
 
